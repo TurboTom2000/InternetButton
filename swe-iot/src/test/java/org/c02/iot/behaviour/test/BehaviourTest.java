@@ -41,6 +41,12 @@ public class BehaviourTest {
 			public void playSound() {
 				Assert.fail();
 			}
+
+//			@Override
+//			public int getAllButtonCounter(ButtonDirection button) {
+//				// TODO Auto-generated method stub
+//				return 0;
+//			}
 		};
 
 		CountAndShowLed beh = new CountAndShowLed(buttonInstance);

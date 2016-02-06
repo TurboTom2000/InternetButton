@@ -14,7 +14,11 @@ public class InternetButtonImpl implements InternetButtonApi {
 	public InternetButtonImpl(ParticleApiWrapper wrapperInstance) {
 		wrapper = wrapperInstance;
 	}
-
+	public void setLedByButtonPress(int position) throws ParticleException{
+		ColorShade shade = new ColorShade();
+		String shadeofred = shade.shadeOfRed;
+		wrapper.callMethod("led", "1");		
+	}
 	public int getButtonCounter(ButtonDirection button) 
 	{
 		int b1 =0;
