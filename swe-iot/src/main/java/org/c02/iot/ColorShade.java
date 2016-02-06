@@ -6,14 +6,17 @@ import org.c02.iot.cloud.api.ParticleException;
 public class ColorShade {
 
 	ParticleApiWrapper wrapper;
+	int shadeOfRed = 0;
 
-	public void increaseRed() {
+	public void increaseRed(int pressed) {
 
-		for (int i = 0;; i = i + 10) {
+			if (shadeOfRed > 255) {
+				shadeOfRed = 0;
+			}
 
 			String blue = "000";
 			String green = "000";
-			String red = String.format("%03d", i);
+			String red = String.format("%03d", pressed*10+shadeOfRed);
 			String posit = "1";
 
 			String positionColor = "" + posit + red + green + blue;
@@ -23,11 +26,7 @@ public class ColorShade {
 			} catch (ParticleException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
-
-			if (i >= 255) {
-				i = 0;
-			}
+			
 
 		}
 
