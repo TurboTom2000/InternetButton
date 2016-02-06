@@ -36,6 +36,29 @@ public class InternetButtonImpl implements InternetButtonApi {
 		return b2;
 	}
 	
+	public int getZehnButtonCounter() 
+	{
+		int b1 =0;
+		int b2=0;
+		try {
+			b1 = wrapper.readVariable("countButton1");
+			b2=b1%10;
+			
+			int b3 = b1/10;
+			for (int i=0; i<b3; i++)
+			{
+				playSound();
+			}
+			
+			System.out.println("b1=" + b1 + " b2= " + b2);
+
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		return b2;
+	}
+	
 	public int getAllButtonCounter(ButtonDirection button) 
 	{
 		int b1 =0;
@@ -124,6 +147,11 @@ public class InternetButtonImpl implements InternetButtonApi {
 		}
 		// TODO Auto-generated method stub
 		
+	}
+	@Override
+	public int getZehnButtonCounter(ButtonDirection button) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }

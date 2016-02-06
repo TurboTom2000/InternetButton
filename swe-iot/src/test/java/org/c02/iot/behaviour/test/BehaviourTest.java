@@ -42,6 +42,12 @@ public class BehaviourTest {
 				Assert.fail();
 			}
 
+			@Override
+			public int getZehnButtonCounter(ButtonDirection button) {
+				// TODO Auto-generated method stub
+				return 0;
+			}
+
 //			@Override
 //			public int getAllButtonCounter(ButtonDirection button) {
 //				// TODO Auto-generated method stub

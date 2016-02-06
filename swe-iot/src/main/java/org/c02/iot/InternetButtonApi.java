@@ -12,6 +12,7 @@ public interface InternetButtonApi {
 
 	int getButtonCounter(ButtonDirection button);
 //	int getAllButtonCounter(ButtonDirection button);
+	int getZehnButtonCounter(ButtonDirection button);
 	
 	void resetButtonCounters();
 	
