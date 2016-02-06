@@ -22,39 +22,24 @@ public class InternetButtonImpl implements InternetButtonApi {
 
 	public void setLed(int postition, Color color) {
 		
-		//String position = ""+postition+color;
+		
+		
+		String blue = String.format("%03d", color.getBlue());
+		String green = String.format("%03d", color.getGreen());
+		String red = String.format("%03d", color.getRed());
+	
+		
+		
+		String positionColor = ""+postition+red+green+blue;
 		
 		
 		try {
-			wrapper.callMethod("led","01255255255");
+			wrapper.callMethod("led",positionColor);
 		} catch (ParticleException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		try {
-			wrapper.callMethod("led","05255000000");
-		} catch (ParticleException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		try {
-			wrapper.callMethod("led","06000255000");
-		} catch (ParticleException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		try {
-			wrapper.callMethod("led","07000000255");
-		} catch (ParticleException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		try {
-			wrapper.callMethod("led","11000255255");
-		} catch (ParticleException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+
 		
 	
 	}
