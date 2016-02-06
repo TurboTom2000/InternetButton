@@ -17,7 +17,7 @@ public class ColorDemoApp {
 		
 		
 		try {
-			internetbutton.
+			
 	} catch (Exception e) {
 		System.out.println("Error");
 	}
