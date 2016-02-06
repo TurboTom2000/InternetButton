@@ -17,8 +17,7 @@ public class ColorDemoApp {
 		
 		
 		try {
-			//redcolor.increaseRed();
-			
+			internetbutton.
 	} catch (Exception e) {
 		System.out.println("Error");
 	}
