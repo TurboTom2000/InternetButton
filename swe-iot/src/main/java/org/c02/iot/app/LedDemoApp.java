@@ -14,8 +14,7 @@ public class LedDemoApp {
 		try {
 			internetbutton.allLedsOff();
 			for(int i = 0; i < 12; i++){
-				internetbutton.setLed(i, Color.red);
-				Thread.sleep(1000);
+				internetbutton.setLed(i, Color.blue);
 			}
 		} catch (Exception e) {
 			System.out.println("Error, no sound played");
