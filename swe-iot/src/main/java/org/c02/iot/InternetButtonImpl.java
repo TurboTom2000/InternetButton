@@ -15,9 +15,25 @@ public class InternetButtonImpl implements InternetButtonApi {
 		wrapper = wrapperInstance;
 	}
 
-	public int getButtonCounter(ButtonDirection button) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int getButtonCounter(ButtonDirection button) 
+	{
+		int b1 =0;
+		int b2=0;
+		try {
+			b1 = wrapper.readVariable("countButton1");
+			b2=b1%11;
+			
+			System.out.println("b1=" + b1 + " b2= " + b2);
+			
+			//System.out.println("Button 1: " + wrapper.readVariable("countButton1"));
+//			System.out.println("Button 2: " + wrapper.readVariable("countButton2"));
+//			System.out.println("Button 3: " + wrapper.readVariable("countButton3"));
+//			System.out.println("Button 4: " + wrapper.readVariable("countButton4"));
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		return b2;
 	}
 
 	public void setLed(int postition, Color color) {
