@@ -13,38 +13,30 @@ public class LedDemoApp {
 		InternetButtonImpl internetbutton = new InternetButtonImpl(wrapper);
 		try {
 			internetbutton.allLedsOff();
-			for(int i = 0; i < 2; i++){
-				internetbutton.setLed(i, Color.blue);
-			}
-			internetbutton.allLedsOff();
-			for(int i = 0; i < 2; i++){
-				internetbutton.setLed(i, Color.red);
-			}
-			internetbutton.allLedsOff();
-			for(int i = 0; i < 2; i++){
-				internetbutton.setLed(i, Color.green);
-			}
-			internetbutton.allLedsOff();
-			for(int i = 0; i < 2; i++){
-				internetbutton.setLed(i, Color.white);
-			}
-			internetbutton.allLedsOff();
-			for(int i = 0; i < 2; i++){
-				internetbutton.setLed(i, Color.yellow);
-			}
-			internetbutton.allLedsOff();
-			for(int i = 0; i < 2; i++){
-				internetbutton.setLed(i, Color.orange);
-			}
-			internetbutton.allLedsOff();
-			for(int i = 0; i < 2; i++){
-				internetbutton.setLed(i, Color.magenta);
-			}		
-			internetbutton.allLedsOff();
-			for(int i = 0; i < 2; i++){
-				internetbutton.setLed(i, Color.cyan);
-			}
-			internetbutton.allLedsOff();
+			int i = 0;
+			internetbutton.setLed(i, Color.blue);
+			i++;
+			internetbutton.setLed(i, Color.red);
+			i++;
+			internetbutton.setLed(i, Color.green);
+			i++;
+			internetbutton.setLed(i, Color.white);
+			i++;
+			internetbutton.setLed(i, Color.yellow);
+			i++;
+			internetbutton.setLed(i, Color.orange);		
+			i++;
+			internetbutton.setLed(i, Color.magenta);
+			i++;
+			internetbutton.setLed(i, Color.cyan);
+			i++;
+			internetbutton.setLed(i, Color.pink);
+			i++;
+			internetbutton.setLed(i, Color.darkGray);
+			i++;
+			internetbutton.setLed(i, Color.gray);
+			i++;
+			internetbutton.setLed(i, Color.lightGray);
 		} catch (Exception e) {
 			System.out.println("Error, no sound played");
 		}

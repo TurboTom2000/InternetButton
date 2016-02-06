@@ -12,6 +12,7 @@ public class ColorDemoApp {
 		InternetButtonImpl internetbutton = new InternetButtonImpl(wrapper);
 		internetbutton.allLedsOff();
 		try {
+			wrapper.callMethod("reset",null);
 			while(true){
 			internetbutton.setLedByButtonPress(1);
 			internetbutton.setLedByButtonPress(2);
@@ -28,13 +29,6 @@ public class ColorDemoApp {
 		} catch (Exception e) {
 		System.out.println("Error");
 		}
-		
-		
-		
-		
-		
-		
-
 	}
 
 }
