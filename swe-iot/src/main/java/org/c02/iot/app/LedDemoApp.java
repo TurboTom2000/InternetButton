@@ -13,9 +13,38 @@ public class LedDemoApp {
 		InternetButtonImpl internetbutton = new InternetButtonImpl(wrapper);
 		try {
 			internetbutton.allLedsOff();
-			for(int i = 0; i < 12; i++){
+			for(int i = 0; i < 2; i++){
 				internetbutton.setLed(i, Color.blue);
 			}
+			internetbutton.allLedsOff();
+			for(int i = 0; i < 2; i++){
+				internetbutton.setLed(i, Color.red);
+			}
+			internetbutton.allLedsOff();
+			for(int i = 0; i < 2; i++){
+				internetbutton.setLed(i, Color.green);
+			}
+			internetbutton.allLedsOff();
+			for(int i = 0; i < 2; i++){
+				internetbutton.setLed(i, Color.white);
+			}
+			internetbutton.allLedsOff();
+			for(int i = 0; i < 2; i++){
+				internetbutton.setLed(i, Color.yellow);
+			}
+			internetbutton.allLedsOff();
+			for(int i = 0; i < 2; i++){
+				internetbutton.setLed(i, Color.orange);
+			}
+			internetbutton.allLedsOff();
+			for(int i = 0; i < 2; i++){
+				internetbutton.setLed(i, Color.magenta);
+			}		
+			internetbutton.allLedsOff();
+			for(int i = 0; i < 2; i++){
+				internetbutton.setLed(i, Color.cyan);
+			}
+			internetbutton.allLedsOff();
 		} catch (Exception e) {
 			System.out.println("Error, no sound played");
 		}
