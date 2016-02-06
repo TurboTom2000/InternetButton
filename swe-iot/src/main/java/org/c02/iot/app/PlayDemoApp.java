@@ -14,6 +14,8 @@ public class PlayDemoApp {
 		} catch (Exception e) {
 			System.out.println("Error, no sound played");
 		}
+		
+		internetbutton.resetButtonCounters();
 	}
 
 }
