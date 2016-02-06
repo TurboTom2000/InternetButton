@@ -13,6 +13,16 @@ public class ColorDemoApp {
 		try {
 			while(true){
 			internetbutton.setLedByButtonPress(1);
+			internetbutton.setLedByButtonPress(2);
+			internetbutton.setLedByButtonPress(3);
+			internetbutton.setLedByButtonPress(4);
+			internetbutton.setLedByButtonPress(5);
+			internetbutton.setLedByButtonPress(6);
+			internetbutton.setLedByButtonPress(7);
+			internetbutton.setLedByButtonPress(8);
+			internetbutton.setLedByButtonPress(9);
+			internetbutton.setLedByButtonPress(10);
+			internetbutton.setLedByButtonPress(11);
 			}
 		} catch (Exception e) {
 		System.out.println("Error");
