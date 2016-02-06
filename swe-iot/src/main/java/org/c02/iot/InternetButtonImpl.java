@@ -27,10 +27,10 @@ public class InternetButtonImpl implements InternetButtonApi {
 		String blue = String.format("%03d", color.getBlue());
 		String green = String.format("%03d", color.getGreen());
 		String red = String.format("%03d", color.getRed());
-	
+	    String posit = String.format("%02d", postition);
 		
 		
-		String positionColor = ""+postition+red+green+blue;
+		String positionColor = ""+posit+red+green+blue;
 		
 		
 		try {
