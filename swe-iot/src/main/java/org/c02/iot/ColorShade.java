@@ -9,7 +9,7 @@ import org.c02.iot.cloud.examples.DemoConstants;
 
 public class ColorShade {
 	ParticleApiWrapper button = new ParticleApiWrapperImpl(DemoConstants.deviceId, DemoConstants.accessToken);
-	InternetButtonImpl internetbutton = new InternetButtonImpl(button);
+	//InternetButtonImpl internetbutton = new InternetButtonImpl(button);
 	public enum ButtonDirection {
 		// Button:
 		//1     2      3     4
@@ -17,13 +17,12 @@ public class ColorShade {
 	}
 	int shadeOfRed;
 
-	public String increaseRed() throws IOException, ParticleException {
+	public String increaseRed(int pressed) throws IOException, ParticleException {
 
-
+			
 			if (shadeOfRed > 255) {
 				shadeOfRed = 0;
 			}
-			int pressed = button.readVariable("countButton1");
 			if (pressed > 25){
 				button.callMethod("reset",null);
 				pressed = 0;

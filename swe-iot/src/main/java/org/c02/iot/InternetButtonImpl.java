@@ -16,7 +16,8 @@ public class InternetButtonImpl implements InternetButtonApi {
 	}
 	public void setLedByButtonPress(int position) throws ParticleException, IOException{
 		ColorShade shade = new ColorShade();
-		String red = shade.increaseRed();
+		int pressed = wrapper.readVariable("countButton1");
+		String red = shade.increaseRed(pressed);
 	    String posit = String.format("%02d", position);		
 		String positionColor = ""+posit+red;
 		try {
