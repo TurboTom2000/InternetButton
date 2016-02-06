@@ -18,8 +18,6 @@ public class CountAndShowLed extends AbstractBehaviour {
 		int buttonCounter = button.getButtonCounter(ButtonDirection.North);
 		button.setLed(buttonCounter, Color.GREEN);
 		
-
-		
 	}
 
 }
