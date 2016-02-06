@@ -17,7 +17,7 @@ public class ColorDemoApp {
 		
 		
 		try {
-			redcolor.increaseRed();
+			//redcolor.increaseRed();
 			
 	} catch (Exception e) {
 		System.out.println("Error");
