@@ -16,7 +16,7 @@ public class ZehnKlickMelodie {
 			CountAndShowLed countandshowledclass = new CountAndShowLed(internetbutton);
 			
 			
-			internetbutton.playSound();
+			//internetbutton.playSound();
 			
 			try 
 			{
