@@ -14,10 +14,17 @@ public class InternetButtonImpl implements InternetButtonApi {
 	public InternetButtonImpl(ParticleApiWrapper wrapperInstance) {
 		wrapper = wrapperInstance;
 	}
-	public void setLedByButtonPress(int position) throws ParticleException{
+	public void setLedByButtonPress(int position) throws ParticleException, IOException{
 		ColorShade shade = new ColorShade();
-		String shadeofred = shade.shadeOfRed;
-		wrapper.callMethod("led", "1");		
+		String red = shade.increaseRed();
+	    String posit = String.format("%02d", position);		
+		String positionColor = ""+posit+red;
+		try {
+			wrapper.callMethod("led",positionColor);
+		} catch (ParticleException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	public int getButtonCounter(ButtonDirection button) 
 	{
